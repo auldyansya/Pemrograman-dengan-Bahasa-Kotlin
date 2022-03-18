@@ -1,0 +1,32 @@
+type: theory
+custom_name: Char in String
+files:
+- name: src/App.kt
+  visible: true
+  text: |-
+    // main function
+    fun main() {
+        val text  = "Kotlin"
+        for (char in text){
+            print("$char ")
+        }
+    }
+  learner_created: false
+status: Failed
+feedback:
+  message: |2
+
+    FAILURE: Build failed with an exception.
+
+    * What went wrong:
+    Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+
+    * Try:
+    Run with --stacktrace option to get the stack trace. Run with --info or --debug option to get more log output. Run with --scan to get full insights.
+
+    * Get more help at https://help.gradle.org
+
+    BUILD FAILED in 3s
+  time: Tue, 16 Feb 2021 09:30:52 UTC
+record: -1
+post_submission_on_open: true
